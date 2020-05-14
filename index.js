@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const { textHandler } = require("./src/handlers/textHandler");
+const { commandHandler } = require("./src/handlers/commandHandler");
 
 const tokenId = process.env.BOT_TOKEN;
   let dice=["🎲","⚀","⚁","⚂","⚃","⚄","⚅"]; 
