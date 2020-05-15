@@ -1,7 +1,13 @@
 require("dotenv").config();
-
 const { textHandler } = require("./src/handlers/textHandler");
 const { commandHandler } = require("./src/handlers/commandHandler");
+// const Telegraf = require("telegraf");
+// const session = require("telegraf/session");
+// const commandParts = require("telegraf-command-parts");
+const { notification } = require("./src/notification");
+const rateLimit = require("./src/utils/ratelimit/ratelimit");
+const MemoryStore = require("./src/utils/ratelimit/memory-store");
+const { isBanned } = require("./src/utils/isBanned");
 
 const tokenId = process.env.BOT_TOKEN;
   let dice=["🎲","⚀","⚁","⚂","⚃","⚄","⚅"]; 
@@ -86,16 +92,6 @@ client.on('message', msg => {
 client.login(tokenId);
 
 /*
-require("dotenv").config();
-const Telegraf = require("telegraf");
-const session = require("telegraf/session");
-const { textHandler } = require("./src/handlers/textHandler");
-const { commandHandler } = require("./src/handlers/commandHandler");
-const commandParts = require("telegraf-command-parts");
-const { notification } = require("./src/notification");
-const rateLimit = require("./src/utils/ratelimit/ratelimit");
-const MemoryStore = require("./src/utils/ratelimit/memory-store");
-const { isBanned } = require("./src/utils/isBanned");
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
