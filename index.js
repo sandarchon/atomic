@@ -18,8 +18,7 @@ const { notification } = require("./src/notification");
 // bot.context.db = { lockedUsers: [] };
 // bot.catch(e => console.log(e));
 
-const bot = 
-var person = { 
+const bot = { 
    id:process.env.BOT_TOKEN, 
    start:function(){return "Hello!!"},    
 }; 
