@@ -26,7 +26,7 @@ const bot = {
 // bot.launch();
 // bot.telegram.getMe().then(res => console.log(res));
 
-// commandHandler(bot);
+commandHandler(bot);
 // textHandler(bot); // Text Handler must be last updates handler !
 // notification(bot);
 console.log("Bot running locally\n");
