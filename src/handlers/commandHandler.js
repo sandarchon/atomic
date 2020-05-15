@@ -1,11 +1,11 @@
-const Markup = require("telegraf/markup");
+// const Markup = require("telegraf/markup");
 const { sessionInit } = require("../sessionInit");
 const { deposit } = require("./commands/deposit");
 const { balance } = require("./commands/balance");
 const { withdraw } = require("./commands/withdraw");
-const { isBanned } = require("../utils/isBanned")
-// const { checkDeposits } = require("./commands/checkDeposits");
-
+// const { isBanned } = require("../utils/isBanned")
+// // const { checkDeposits } = require("./commands/checkDeposits");
+/*
 module.exports.commandHandler = bot => {
   bot.start(async ctx => {
     if (ctx.chat.type == "private") await start(ctx);
@@ -93,3 +93,4 @@ const menu = ctx => {
       .extra()
   );
 };
+*/
