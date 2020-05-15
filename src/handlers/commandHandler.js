@@ -5,9 +5,10 @@ const { balance } = require("./commands/balance");
 const { withdraw } = require("./commands/withdraw");
 // const { isBanned } = require("../utils/isBanned")
 // // const { checkDeposits } = require("./commands/checkDeposits");
-/*
-module.exports.commandHandler = bot => {
-  bot.start(async ctx => {
+
+module.exports.commandHandler = bot => { ; }
+  
+/*  bot.start(async ctx => {
     if (ctx.chat.type == "private") await start(ctx);
   });
 
